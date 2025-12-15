@@ -244,16 +244,16 @@ export default function Component() {
                 SKILLS
               </Link>
               <Link
-                href="#education"
-                className="text-green-400 hover:text-yellow-400 transition-colors uppercase tracking-wide"
-              >
-                EDUCATION
-              </Link>
-              <Link
                 href="#experience"
                 className="text-green-400 hover:text-yellow-400 transition-colors uppercase tracking-wide"
               >
                 EXPERIENCE
+              </Link>
+              <Link
+                href="#education"
+                className="text-green-400 hover:text-yellow-400 transition-colors uppercase tracking-wide"
+              >
+                EDUCATION
               </Link>
               <Link
                 href="#projects"
@@ -535,90 +535,6 @@ export default function Component() {
         </div>
       </section>
 
-      {/* Education Section */}
-      <section id="education" className="py-16 px-4 sm:px-6 lg:px-8 relative reveal-on-scroll">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="text-green-400 font-mono text-lg mb-4 tracking-widest">{">>> EDUCATION LOG <<<"}</div>
-            <h2 className="text-4xl md:text-5xl font-bold text-green-400 font-mono tracking-wider">ACADEMIC_RECORDS</h2>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-black/80 border-4 border-green-400 shadow-[0_0_20px_rgba(0,255,0,0.3)] hover:shadow-[0_0_30px_rgba(0,255,0,0.5)] transition-all">
-              <CardHeader className="border-b-2 border-green-400/30 pb-6">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-yellow-400 font-mono tracking-wide mb-2">
-                      UNIVERSITY OF MARYLAND, COLLEGE PARK
-                    </h3>
-                    <p className="text-lg text-green-400 font-mono">B.S. in Computer Science</p>
-                  </div>
-                  <div className="flex flex-col items-start md:items-end gap-2">
-                    <Badge variant="outline" className="bg-green-400/20 text-green-400 border-green-400 font-mono">
-                      <Calendar className="mr-2 h-4 w-4" />
-                      Aug 2021 – May 2025
-                    </Badge>
-                    <p className="text-sm text-gray-400 font-mono">College Park, MD</p>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="pt-6">
-                {/* Honors */}
-                <div className="mb-6">
-                  <h4 className="text-lg font-bold text-yellow-400 font-mono mb-3 flex items-center gap-2">
-                    <span className="text-green-400">{">"}</span>
-                    HONORS & ACHIEVEMENTS
-                  </h4>
-                  <div className="space-y-2 pl-6">
-                    <div className="flex items-start gap-3">
-                      <span className="text-yellow-400 mt-1">{">"}</span>
-                      <span className="text-gray-300 font-mono">
-                        <span className="text-green-400 font-bold">UMD Scholars Program</span> (Media, Self and Society)
-                      </span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <span className="text-yellow-400 mt-1">{">"}</span>
-                      <span className="text-gray-300 font-mono">
-                        <span className="text-green-400 font-bold">Kenneth A. Joseph Scholarship</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Relevant Coursework */}
-                <div>
-                  <h4 className="text-lg font-bold text-yellow-400 font-mono mb-3 flex items-center gap-2">
-                    <span className="text-green-400">{">"}</span>
-                    RELEVANT COURSEWORK
-                  </h4>
-                  <div className="pl-6">
-                    <div className="flex flex-wrap gap-2">
-                      {[
-                        "Object Oriented Programming",
-                        "Computer Systems",
-                        "Organization of Programming Languages",
-                        "Algorithms",
-                        "Web App Development with JavaScript",
-                        "Database Design",
-                        "Web Development with Flask/Python"
-                      ].map((course, index) => (
-                        <Badge
-                key={index}
-                          variant="outline"
-                          className="bg-cyan-400/10 text-cyan-400 border-cyan-400/50 font-mono text-xs"
-                        >
-                          {course}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Experience Section */}
       <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8 relative reveal-on-scroll">
         <div className="max-w-6xl mx-auto">
@@ -666,19 +582,19 @@ export default function Component() {
                   <div className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">{">"}</span>
                     <span>
-                      Built the <span className="text-yellow-400 font-bold">NewsDesk UI</span>, a full-stack Angular/Spring Boot application serving <span className="text-yellow-400 font-bold">50+ credit risk analysts</span>, integrating Aurora to provide curated business articles with <span className="text-yellow-400 font-bold">AI-generated summaries, sentiment analysis, relevancy scoring, risk impact</span>, and links to original sources, reducing time spent gathering key information by streamlining data access, with a modern <span className="text-yellow-400 font-bold">publication-inspired design (WaPo/NYT style)</span>.
+                      Built the <span className="text-yellow-400 font-bold">NewsDesk UI</span>, a full-stack Angular/Spring Boot application serving <span className="text-yellow-400 font-bold">50+ credit risk analysts</span>, querying <span className="text-yellow-400 font-bold">AWS Aurora</span> database to provide curated business articles with <span className="text-yellow-400 font-bold">AI-generated summaries, sentiment analysis, relevancy scoring, risk impact</span>, and links to original sources, reducing time spent gathering key information by streamlining data access, with a modern <span className="text-yellow-400 font-bold">publication-inspired design (WaPo/NYT style)</span>.
                     </span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">{">"}</span>
                     <span>
-                      Implemented <span className="text-yellow-400 font-bold">secure CSV file upload functionality</span> on the <span className="text-yellow-400 font-bold">ECHO risk platform</span> with Angular front-end and Spring Boot back-end validation, ensuring accurate ingestion of risk data and alignment with analysts' workflows.
+                      Implemented <span className="text-yellow-400 font-bold">secure CSV file upload functionality</span> on the <span className="text-yellow-400 font-bold">ECHO risk platform</span> with Angular front-end and Spring Boot back-end validation, uploading files to <span className="text-yellow-400 font-bold">AWS S3 buckets</span> for secure persistent cloud storage, ensuring accurate ingestion of risk data and alignment with analysts' workflows.
                     </span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-yellow-400 mt-1">{">"}</span>
                     <span>
-                      Contributed to system testing and feature validation on the <span className="text-yellow-400 font-bold">ECHO risk platform</span>, deploying services to <span className="text-yellow-400 font-bold">AWS ECS</span> and using AI-assisted tools to optimize front-end performance and database queries, ensuring smooth production releases.
+                      Contributed to system testing and feature validation on the <span className="text-yellow-400 font-bold">ECHO risk platform</span>, leveraged industry-standard <span className="text-yellow-400 font-bold">Gitlab CI/CD pipelines</span> to deploy services to <span className="text-yellow-400 font-bold">AWS ECS</span> and used AI-assisted tools to optimize front-end performance and database queries, ensuring smooth production releases.
                     </span>
                   </div>
                 </div>
@@ -793,6 +709,90 @@ export default function Component() {
                     <span>
                       Developed activation analytics and reporting by analyzing thousands of vendor activation events with <span className="text-yellow-400 font-bold">Pandas, Elasticsearch, and Kibana</span>, culminating in the <span className="text-yellow-400 font-bold">Orchestration Activation Insights Report</span> that identified root causes, enabled corrective actions, and helped resolve <span className="text-yellow-400 font-bold">1,000+ failed activations</span>, increasing overall success rates.
                     </span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="py-16 px-4 sm:px-6 lg:px-8 relative reveal-on-scroll">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="text-green-400 font-mono text-lg mb-4 tracking-widest">{">>> EDUCATION LOG <<<"}</div>
+            <h2 className="text-4xl md:text-5xl font-bold text-green-400 font-mono tracking-wider">ACADEMIC_RECORDS</h2>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-black/80 border-4 border-green-400 shadow-[0_0_20px_rgba(0,255,0,0.3)] hover:shadow-[0_0_30px_rgba(0,255,0,0.5)] transition-all">
+              <CardHeader className="border-b-2 border-green-400/30 pb-6">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-yellow-400 font-mono tracking-wide mb-2">
+                      UNIVERSITY OF MARYLAND, COLLEGE PARK
+                    </h3>
+                    <p className="text-lg text-green-400 font-mono">B.S. in Computer Science</p>
+                  </div>
+                  <div className="flex flex-col items-start md:items-end gap-2">
+                    <Badge variant="outline" className="bg-green-400/20 text-green-400 border-green-400 font-mono">
+                      <Calendar className="mr-2 h-4 w-4" />
+                      Aug 2021 – May 2025
+                    </Badge>
+                    <p className="text-sm text-gray-400 font-mono">College Park, MD</p>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-6">
+                {/* Honors */}
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-yellow-400 font-mono mb-3 flex items-center gap-2">
+                    <span className="text-green-400">{">"}</span>
+                    HONORS & ACHIEVEMENTS
+                  </h4>
+                  <div className="space-y-2 pl-6">
+                    <div className="flex items-start gap-3">
+                      <span className="text-yellow-400 mt-1">{">"}</span>
+                      <span className="text-gray-300 font-mono">
+                        <span className="text-green-400 font-bold">UMD Scholars Program</span> (Media, Self and Society)
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-yellow-400 mt-1">{">"}</span>
+                      <span className="text-gray-300 font-mono">
+                        <span className="text-green-400 font-bold">Kenneth A. Joseph Scholarship</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Relevant Coursework */}
+                <div>
+                  <h4 className="text-lg font-bold text-yellow-400 font-mono mb-3 flex items-center gap-2">
+                    <span className="text-green-400">{">"}</span>
+                    RELEVANT COURSEWORK
+                  </h4>
+                  <div className="pl-6">
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        "Object Oriented Programming",
+                        "Computer Systems",
+                        "Organization of Programming Languages",
+                        "Algorithms",
+                        "Web App Development with JavaScript",
+                        "Database Design",
+                        "Web Development with Flask/Python"
+                      ].map((course, index) => (
+                        <Badge
+                          key={index}
+                          variant="outline"
+                          className="bg-cyan-400/10 text-cyan-400 border-cyan-400/50 font-mono text-xs"
+                        >
+                          {course}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -957,7 +957,6 @@ export default function Component() {
           </div>
           <div className="mt-6 text-green-400 font-mono text-sm">
             <div>{">"} Email: himnish03@gmail.com</div>
-            <div>{">"} Phone: (443)-653-3510</div>
           </div>
         </div>
       </section>
@@ -966,7 +965,6 @@ export default function Component() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t-2 border-green-400 relative">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-green-400 font-mono">
-            <div className="mb-2">{"© 2024 HIMNISH.EXE - ALL RIGHTS RESERVED"}</div>
             <div className="text-yellow-400 text-sm">{"GAME OVER - THANKS FOR PLAYING!"}</div>
           </div>
         </div>
