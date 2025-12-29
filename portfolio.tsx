@@ -832,6 +832,7 @@ export default function Component() {
             {projects.map((project, index) => {
               // Color themes for each project
               const themes = [
+                { marquee: 'from-blue-600 to-blue-800', marqueeBorder: 'border-blue-400', text: 'text-blue-400', textLight: 'text-blue-300', badge: 'bg-blue-400/20 text-blue-400 border-blue-400' },
                 { marquee: 'from-cyan-600 to-cyan-800', marqueeBorder: 'border-cyan-400', text: 'text-cyan-400', textLight: 'text-cyan-300', badge: 'bg-cyan-400/20 text-cyan-400 border-cyan-400' },
                 { marquee: 'from-green-600 to-green-800', marqueeBorder: 'border-green-400', text: 'text-green-400', textLight: 'text-green-300', badge: 'bg-green-400/20 text-green-400 border-green-400' },
                 { marquee: 'from-red-600 to-red-800', marqueeBorder: 'border-red-400', text: 'text-red-400', textLight: 'text-red-300', badge: 'bg-red-400/20 text-red-400 border-red-400' },
