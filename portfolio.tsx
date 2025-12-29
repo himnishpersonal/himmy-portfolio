@@ -139,6 +139,18 @@ export default function Component() {
 
   const projects = [
     {
+      title: "PORTFOLIO SENTIMENT AGENT",
+      description: [
+        "Multi-agent system with LangGraph analyzing financial news across portfolios (5 API integrations)",
+        "FinBERT sentiment analysis (91% confidence) + Llama 3.2 summarization (sub-3s latency)",
+        "Weighted risk scoring with recency decay, source credibility, and automated email reports",
+        "Deployed with Docker, GitHub Actions, Supabase PostgreSQL, and Streamlit interface"
+      ],
+      tags: ["Python", "LangGraph", "FinBERT", "Llama 3.2", "Docker", "Supabase", "Streamlit", "PostgreSQL"],
+      github: "https://github.com/himnishpersonal/portfolio-sentiment-agent",
+      live: "https://portfolio-sentiment-agent-bdssllsd9euqhwrpctccrs.streamlit.app/",
+    },
+    {
       title: "LECTUREMATE-AI",
       description: [
         "AI note generator converting lectures → searchable notes (audio + PDF/DOCX/TXT processing)",
@@ -152,11 +164,11 @@ export default function Component() {
     {
       title: "SMARTINVEST BOT",
       description: [
-        "XGBoost model (84% accuracy) trained on 200K+ prices + 4,800+ news articles for 483 S&P 500 stocks",
-        "Automated ETL with 4 APIs, achieving +7.81% returns vs +5.84% benchmark (Sharpe: 2.14)",
-        "Discord bot with 6 commands: recommendations, portfolio simulation, risk management"
+        "XGBoost model (78% accuracy, 70% F1) on 476 S&P 500 stocks with 8-feature pipeline: momentum (5d/10d/20d), volume trends, sentiment scores",
+        "FinBERT NLP processing news across entire universe, with 10-day return (38% feature importance) + sentiment metrics as top predictors",
+        "Discord bot with 6 commands: recommendations, portfolio simulation, technical indicators, risk management"
       ],
-      tags: ["Python", "XGBoost", "FinBERT", "Discord", "ETL", "APIs"],
+      tags: ["Python", "XGBoost", "FinBERT", "Discord", "ETL", "Feature Engineering"],
       github: "https://github.com/himnishpersonal/smartinvest-bot",
       live: "#",
     },
@@ -331,8 +343,8 @@ export default function Component() {
                   <Image
                     src="/himmy.png"
                     alt="Player Avatar"
-                    width={250}
-                    height={250}
+                    width={160}
+                    height={160}
                     className="w-full h-auto filter contrast-125 brightness-110"
                   />
                 </div>
@@ -421,6 +433,7 @@ export default function Component() {
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">React</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Angular</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Next.js</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Streamlit</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">HTML/CSS</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Tailwind CSS</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">EJS</Badge>
@@ -441,6 +454,7 @@ export default function Component() {
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Spring Boot</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">FastAPI</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Flask</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">SQLAlchemy</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">REST APIs</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Microservices</Badge>
                 </div>
@@ -454,6 +468,8 @@ export default function Component() {
               </CardHeader>
               <CardContent className="p-4">
                 <div className="flex flex-wrap gap-2">
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">PostgreSQL</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Supabase</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">MongoDB</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">MySQL</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Oracle</Badge>
@@ -473,10 +489,12 @@ export default function Component() {
               </CardHeader>
               <CardContent className="p-4">
                 <div className="flex flex-wrap gap-2">
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">LangGraph</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Llama</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">FinBERT</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Pandas</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Apache Airflow</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">XGBoost</Badge>
-                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">FinBERT</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Whisper</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">FAISS</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">RAG</Badge>
@@ -492,12 +510,14 @@ export default function Component() {
               <CardContent className="p-4">
                 <div className="flex flex-wrap gap-2">
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Git</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">GitHub Actions</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">GitLab CI/CD</Badge>
+                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Docker</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">AWS</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">AWS ECS</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">GCP</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Linux</Badge>
                   <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Bitbucket</Badge>
-                  <Badge className="bg-green-400/20 text-green-400 border border-green-400 font-mono text-xs">Docker</Badge>
                 </div>
               </CardContent>
             </Card>
